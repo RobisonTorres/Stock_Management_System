@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="user">
+        <h3 id="Title">Create A New User</h3>
+        <form action="" method="post" onsubmit="return goodUser();">
+            {{ form.hidden_tag() }}
+            {{ form.first_name }}
+            {{ form.last_name }}
+            {{ form.password }}
+            {{ form.confirm_password }}
+            {{ form.role(id="type_role") }}
+            <p></p>
+            {{ form.submit_create(id="choice") }}
+        </form>
+        <br>
+        <a id="message" href="{{url_for('stock')}}">Proceed to Stock</a>
+        {% with messages = get_flashed_messages()%}
+        {% if messages%}
+            {% for message in messages%}
+                <p id="display_flash">{{message}}</p>
+            {%endfor%}
+        {%endif%}
+        {%endwith%}
+    </div>        
+{% endblock content %}

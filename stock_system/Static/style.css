@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    background-image: url("https://www.newcastlesys.com/hs-fs/hubfs/2022/0406/220406-how-to-keep-your-warehouse-organized.jpeg?width=1500&name=220406-how-to-keep-your-warehouse-organized.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main_title {
+    padding-right: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: navy;
+}
+
+#Title {
+    text-align: center;
+    font-size: 18px;
+    color: navy;
+}
+
+.user {
+    text-align: center;
+    background-color: lavender;
+    border: solid;
+    width: 305px;
+    margin: 150px auto;
+    border-radius: 15px;
+    padding-bottom: 15px;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 5px;
+    height: 18px;
+    width: 220px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"]{
+    padding: 8px 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#type_role {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(133, 180, 99);
+}
+
+#message {
+    font-size: small;
+}
+
+h1 {
+    font-size: 25px;
+    width: 390px;
+    color: black;
+    background-color: lavender;
+    text-align: center;
+    border: solid;
+    margin: 40px auto 20px;
+    border-radius: 15px;
+}
+
+.menu, .menu_show {
+    background-color: lavender;
+    padding: 0 0 15px 20px;
+    border: solid;
+    margin: 4px auto;
+    border-radius: 15px;
+}
+
+.menu {
+    width: 375px;
+    color: black;
+}
+
+.menu_show {
+    width: 650px;
+    padding-left: 48px;
+}
+
+input[type="text"]#name {
+    width: 70%;
+    height: 16px;
+}
+
+input[type="number"]{
+    width: 25%;
+    height: 22px;
+    border-radius: 5px;
+    margin-left: 6px;
+    margin-bottom:  10px;
+}
+
+#display_result {
+    text-align: center;
+    font-size: medium;
+    color: rgb(174, 31, 15);
+}
+
+#display_flash {
+    text-align: center;
+    font-size: medium;
+    color: rgb(59, 26, 157);
+    animation: fadeOut 6s forwards; /* Animation for fading out */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        opacity: 0; /* Fully invisible */
+    }}
+
+#styled-table, #hide {
+    width: 90%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 10px auto;
+    font-size: 18px;
+    margin: 5px 0px 10px 0px;
+    table-layout: fixed;
+}
+
+#styled-table th {
+    text-align: center;
+    font-size: medium;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+#hide td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+#hide tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+input[type="button"]{
+    padding: 8px 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(133, 180, 99);
+}
+
+.center_button {
+    padding-right: 20px;
+    text-align: center;
+}
+
+.exit_button {
+    padding-right: 20px;
+    text-align: right;
+}
+input[type='submit']#exit {
+    background: red;
+}

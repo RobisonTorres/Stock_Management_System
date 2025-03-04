@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Stock Management System</h1>
+        <div class="menu">
+            <form id="form_functions" action="/stock" method="post" onsubmit="return validateForm(event);">
+                <h3 id="main_title">Stock Menu</h3>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="product_name"><br>
+                <label for="price">Price</label>
+                <input type="number" min="0.00" step="0.01" id="price" name="product_price" onkeypress="CheckSpace(event)">
+                <label for="quantity">Quantity</label>
+                <input type="number" step="1" id="quantity" placeholder="Add/Sub" name="product_quantity"><br>
+                <label for="mim_quantity">Min. Quantity</label>
+                <input type="number" min="0" step="1" id="mim_quantity" name="minimum_quantity">
+                <p id="display_result">{{display_result}}</p>
+                {% with messages = get_flashed_messages()%}
+                    {% if messages%}
+                        {% for message in messages%}
+                            <p id="display_flash">{{message}}</p>
+                        {%endfor%}
+                    {%endif%}
+                {%endwith%}
+                <div class="center_button">
+                    <input type="submit" name="submit_button" value="Add">
+                    <input type="submit" name="submit_button" value="Update">
+                    <input type="submit" name="submit_button" value="Delete">
+                    <input type="submit" name="submit_button" value="Show">
+                </div>
+                <div class="exit_button">
+                <br>
+                <input type="submit" id="exit" name="submit_button" value="Exit">
+                </div>
+            </form>
+        </div>
+{% endblock content %}

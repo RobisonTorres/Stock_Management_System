@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Stock Management System</h1>
+        <div class="menu_show">
+        <form action="/show" method="post">
+            <br>
+            <h3 id="main_title">Show all products</h3>
+            <table id="styled-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Min. Quantity</th>
+                    <th>Status Stock</th>                    
+                </tr>
+            </table>
+            <table id="hide">
+                <tr>
+                {% for item in showItem %}
+                    <td>{{item[0]}}</td>
+                    <td>{{item[1]}}</td>
+                    <td>{{item[2]}}</td>
+                    <td>{{item[3]}}</td>
+                    {% if item[2] < item[3] %}
+                        <td><p id="display_result">Reorder</p></td>
+                    {% else %}
+                        <td><p id="display_result">Ok</p></td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </table>
+            <div class="center_button">
+                <input type="submit" id="back" name="submit_button" value="Stock">
+            </div>
+            <div class="exit_button">
+                <input type="submit" id="exit" name="submit_button" value="Exit">
+            </div>
+        </form>
+        </div>
+{% endblock content %}
