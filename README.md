@@ -1,56 +1,78 @@
-# **Stock Management System**
+# 📦 Stock Management System
 
-## **Features**
+A simple and effective inventory control application with user authentication and product management features. Built with Python and SQL Server.
 
-- **User Authentication**  
-  - Login screen  
+---
 
-  - New user registration  
+## 🚀 Features
 
-- **Stock Management**  
-  - Dedicated menu for managing stock items with the following operations:  
-    - **Add**: Insert new products into the stock.  
-    - **Update**: Modify details of existing products.  
-    - **Delete**: Remove products from the stock.  
-    - **Show**: Display all products currently in stock.  
-    - **Exit**: Return to the main menu.
+### 🔐 User Authentication
+- Secure login screen  
+- New user registration  
 
-<p align="center"><img text-align:center src=image_app/stock_menu.png></p>
+### 📊 Stock Management  
+Manage inventory efficiently through a dedicated menu:  
+- **Add** – Insert new products into stock  
+- **Update** – Modify product details  
+- **Delete** – Remove products from stock  
+- **Show** – Display all products in stock  
+- **Exit** – Return to the main menu  
 
-- **Product Overview**  
-  - A screen to view all stock items.  
+### 📋 Product Overview  
+- View all registered stock items in a dedicated screen
 
-## **Prerequisites**
+---
 
-Ensure you have the following installed:
+## 🛠 Prerequisites
 
-- Python  
-- SQL Server  
-- Required Python packages (see `requirements.txt`)  
+Make sure the following tools are installed on your machine:
 
-## **Installation & Usage**
+- [Python](https://www.python.org/)  
+- [SQL Server](https://www.microsoft.com/en-us/sql-server/)  
+- Python packages listed in `requirements.txt`
 
-Follow these steps to set up and run the application:
+---
 
-1. **Clone the repository** to your local machine:
+## 📦 Installation & Usage
+
+Follow the steps below to get the system running:
+
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/RobisonTorres/Stock_Management_System.git
-   ```  
+   cd Stock_Management_System
+   ```
 
-2. **Set up the database** in SQL Server by executing:
+2. **Set up the SQL Server database**:
    ```sql
    CREATE DATABASE stock_db;
    ```
-  2.1 Don't forget to change the sql server connection in __init__.py.
-  
+   ⚠️ Update the SQL Server connection string in `__init__.py` to match your environment.
+
 3. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
-   ```  
+   ```
 
 4. **Run the application**:
    ```bash
    python run_app.py
-   ```  
+   ```
 
-5. Click on the link provided in the terminal to access the application, e.g: http://127.0.0.1:5000. 
+5. Open the provided link in your browser (e.g., `http://127.0.0.1:5000`) to access the application.
+
+---
+
+## 📂 Project Structure (Optional)
+
+```
+Stock_Management_System/
+│
+├── flowchart_app/           # flowchart application
+├── stock_system/            # Core application code
+├── requirements.txt         # Dependencies
+├── run_app.py               # Entry point to run the app
+└── README.md
+```
+
+---
