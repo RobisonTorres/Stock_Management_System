@@ -63,7 +63,7 @@ Follow the steps below to get the system running:
 
 ---
 
-## 📂 Project Structure (Optional)
+## 📂 Project Structure
 
 ```
 Stock_Management_System/
